@@ -20,7 +20,7 @@ with open('http.txt') as nyau:
     proxy_list = nyau.readlines()
 
 invite_url = 'https://xrpspin.com/4748220927330365?'
-password = 'matako'
+password = ''
 
 for proxy in proxy_list:
     print(proxy)
