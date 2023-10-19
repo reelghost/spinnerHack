@@ -1,2 +1,0 @@
-{"confirm":0,"payout_value":0.000025,"password":"Matako","xrpAddr":"rNxp4h8apvRis6mJf9Sh8C6iRxfrDWN7AV","distTag":"322150283"}
-https://xrpspin.com/api.php?act=withdrawXrp
