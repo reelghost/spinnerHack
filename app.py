@@ -7,7 +7,7 @@ def login(url_login, payload):
   response_login = session.post(url_login, json=payload)
   response_data = json.loads(response_login.text)
   if response_login.status_code == 200: # if request made successfully
-      print(response_data['parameters'])
+      print(response_data['parameters'][-1])
 
 def withdraw(url_withdraw, payload):
   response_withdraw = session.post(url_withdraw, json=payload)
@@ -28,12 +28,14 @@ payload_logins = [
   {"username": "masikio","password": "Matako"},
   {"username": "fatuu5","password": "matako"},
   {"username": "jeflet","password": "matako"},
+  {"username": "pacha5","password": "matako"},
 ]
 payload_withdraws = [
   {"confirm": 0, "payout_value": 0.000025,"password": "Matako@1997","xrpAddr": "rNxp4h8apvRis6mJf9Sh8C6iRxfrDWN7AV","distTag": "322129133"},
   {"confirm": 0, "payout_value": 0.000025,"password": "Matako","xrpAddr": "rNxp4h8apvRis6mJf9Sh8C6iRxfrDWN7AV","distTag": "322150283"},
   {"confirm": 0, "payout_value": 0.000025,"password": "matako","xrpAddr": "rNxp4h8apvRis6mJf9Sh8C6iRxfrDWN7AV","distTag": "322386002"},
   {"confirm": 0, "payout_value": 0.000025,"password": "matako","xrpAddr": "rNxp4h8apvRis6mJf9Sh8C6iRxfrDWN7AV","distTag": "322400834"},
+  {"confirm": 0, "payout_value": 0.000025,"password": "matako","xrpAddr": "rNxp4h8apvRis6mJf9Sh8C6iRxfrDWN7AV","distTag": "322701029"},
   ]
 
 
