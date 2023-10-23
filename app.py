@@ -7,13 +7,13 @@ def login(url_login, payload):
   response_login = session.post(url_login, json=payload)
   response_data = json.loads(response_login.text)
   if response_login.status_code == 200: # if request made successfully
-      print(response_data['parameters'][-1])
+      print(response_data['parameters'])
 
 def withdraw(url_withdraw, payload):
   response_withdraw = session.post(url_withdraw, json=payload)
-  response_data = json.loads(response_withdraw.text)
+  # response_data = json.loads(response_withdraw.text)
   if response_withdraw.status_code == 200:
-      print(response_data['parameters'][-1])
+      print(response_withdraw.text)
 
 # Create a session object to persist the session data
 session = requests.Session()
