@@ -11,6 +11,7 @@ def login(url_login, payload):
 
 def withdraw(url_withdraw, payload):
   response_withdraw = session.post(url_withdraw, json=payload)
+  print(response_withdraw.status_code)
   # response_data = json.loads(response_withdraw.text)
   if response_withdraw.status_code == 200:
       print(response_withdraw.text)
